@@ -1,0 +1,68 @@
+body {
+  background-color: #FFFFFF;
+  color: #00204A;
+
+  font-family: 'Lato', sans-serif;
+
+  &.modal-open {
+    position: fixed;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  // Desktop
+  @media screen and (min-width: 768px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+
+  //   Mobile
+  @media screen and (max-width: 767px) {
+    width: 375px;
+  }
+
+  // Desktop
+  @media screen and (min-width: 768px) {
+    width: 1440px;
+    padding: 0 20px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}

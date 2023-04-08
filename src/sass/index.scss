@@ -1,2 +1,6 @@
 @import './common';
-@import './example';
+@import './base';
+
+@import './components/header';
+@import './components/mobile-menu';
+@import './components/hero';
